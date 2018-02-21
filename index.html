@@ -1,4 +1,20 @@
-<!DOCTYPE html>
+<?php
+
+if($_POST["submit"]) {
+    $recipient="haley_townsend@icloud.com";
+    $subject="Form to email message";
+    $contactName=$_POST["contactName"];
+    $contactEmail=$_POST["contactEmail"];
+    $contactMessage=$_POST["contactMessage"];
+
+    $mailBody="Name: $contactEmail\nEmail: $contactEmail\n\n$contactMessage";
+
+    mail($recipient, $subject, $mailBody, "From: $contactName <$contactEmail>");
+
+    $thankYou="<p>Thank you! Your message has been sent.</p>";
+}
+
+?><!DOCTYPE html>
 <!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
 <!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
@@ -721,7 +737,6 @@
 
 <!--	</section> <!-- /services -->
 
-
 	<!-- stats Section
    ================================================== -->
 	<!-- <section id="stats" class="count-up">
@@ -855,7 +870,7 @@
    		<div class="col-twelve">
 
             <!-- form -->
-            <form name="contactForm" id="contactForm" method="post" action="mailto:haley_townsend@icloud.com" encrypt="text/plain">
+            <form name="contactForm" id="contactForm" method="post" action="contact.php">
       			<fieldset>
 
                   <div class="form-field">
