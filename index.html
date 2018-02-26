@@ -1,20 +1,4 @@
-<?php
-
-if($_POST["submit"]) {
-    $recipient="haley_townsend@icloud.com";
-    $subject="Form to email message";
-    $contactName=$_POST["contactName"];
-    $contactEmail=$_POST["contactEmail"];
-    $contactMessage=$_POST["contactMessage"];
-
-    $mailBody="Name: $contactEmail\nEmail: $contactEmail\n\n$contactMessage";
-
-    mail($recipient, $subject, $mailBody, "From: $contactName <$contactEmail>");
-
-    $thankYou="<p>Thank you! Your message has been sent.</p>";
-}
-
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
 <!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
@@ -90,6 +74,19 @@ if($_POST["submit"]) {
    			<div class="col-twelve">
 
 	   			<h5>Hello, World.</h5>
+          <!-- <h5>"Artificial Intelligence usually beats natural stupidity" </h5>-->
+          <!-- <h5>"First, solve the problem. Then, write the code."</h5> -->
+          <!-- <h5>"The nice thing about standards is that there are so many to choose from."</h5> -->
+          <!-- <h5>"Weeks of coding can save you hours of planning."</h5> -->
+          <!-- <h5>"Profanity is the one language all programmers know best."</h5> -->
+          <!-- <h5>"Just don't create a file called -rf."</h5> -->
+          <!-- <h5>"Java is to JavaScript as Car is to Carpet."</h5> -->
+          <!-- <h5>"One man's constant is another man's variable."</h5> -->
+          <!-- <h5>"The future is here. It is just not evenly distributed yet."</h5> -->
+          <!-- <h5>"Programming languages, like pizzas, come in only two sizes: too big and too small."</h5> -->
+          <!-- <h5>"Fast. Good. Cheap. Pick two."</h5> -->
+          <!-- <h5>"If there is no struggle, there is no progress."</h5> -->
+          <!-- <h5> "The best thing about a boolean </br>is even if you are wrong, </br> you are only off by a bit."</h5> --></br>
 	   			<h1>I'm Haley Townsend.</h1>
 
 	   			<p class="intro-position">
@@ -138,7 +135,7 @@ if($_POST["submit"]) {
 
    				<img src="images/profile-pic.jpg" alt="Profile Picture">
 
-   				<p class="lead">Lorem ipsum Exercitation culpa qui dolor consequat exercitation fugiat laborum ex ea eiusmod ad do aliqua occaecat nisi ad irure sunt id pariatur Duis laboris amet exercitation veniam labore consectetur ea id quis eiusmod.</p>
+   				<p class="lead">My career path started with a B.S. degree dual majoring in Accounting & Finance. I spent 3 years in transportation and commodity trading, but something was still missing so I quit my job to make the jump into web development and haven't looked back.</p>
    			</div>
 
    		</div>
@@ -149,7 +146,7 @@ if($_POST["submit"]) {
    		<div class="col-six tab-full">
 
    			<h3>Profile</h3>
-   			<p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p>
+   			<p>KSU Wildcat. Kansas City Chiefs fan. Cat Mom. Coder. Mixologist. Expert level fridge-clean-out cook. Scuba diver. Happy hour feind. Podcast collector. Netflix binger. </p>
 
    			<ul class="info-list">
    				<li>
@@ -166,7 +163,7 @@ if($_POST["submit"]) {
    				</li>
    				<li>
    					<strong>Website:</strong>
-   					<span><a href:"http://haleytownsend.netlify.com/">http://haleytownsend.netlify.com/</span>
+   					<span><a href="http://haleytownsend.netlify.com">http://haleytownsend.netlify.com</span>
    				</li>
    				<li>
    					<strong>Email:</strong>
@@ -354,7 +351,7 @@ if($_POST["submit"]) {
 
 	   				<div class="timeline-content">
 	   					<h4>Kansas State University</h4>
-	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
+	   					<p>Finance and Accounting major. Certificate in Integrated Investment Management </p>
 	   				</div>
 
 	   			</div> <!-- /timeline-block -->
@@ -376,9 +373,9 @@ if($_POST["submit"]) {
    		<div class="col-twelve">
 
    			<h5>Portfolio</h5>
-   			<h1>Check Out Some of My Works.</h1>
+   			<h1>Check Out Some of My Work.</h1>
 
-   			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+   			<!--<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p> -->
 
    		</div>
    	</div> <!-- /section-intro-->
@@ -392,13 +389,13 @@ if($_POST["submit"]) {
 
 	         	<div class="bgrid folio-item">
 	               <div class="item-wrap">
-	               	<img src="images/portfolio/liberty.jpg" alt="Liberty">
+	               	<img src="images/currency-converter.JPG" alt="Currency">
 	                  <a href="#modal-01" class="overlay">
 	                     <div class="folio-item-table">
 	                     	<div class="folio-item-cell">
-		     					       <h3 class="folio-title">Liberty</h3>
+		     					       <h3 class="folio-title">Currency Converter</h3>
 		     					    	 <span class="folio-types">
-		     					       	  Graphic Design
+		     					       	  HTML, CSS, JavaScript, jQuery
 		     					       </span>
 		     					   </div>
 	                     </div>
@@ -412,9 +409,9 @@ if($_POST["submit"]) {
 	               	<a href="#modal-02" class="overlay">
 	                     <div class="folio-item-table">
 	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Shutterbug</h3>
+	                     		<h3 class="folio-title">"Thinkful" Tube</h3>
 		     					    	<span class="folio-types">
-		     					       	  Web Design
+		     					       	  HTML, CSS, JavaScript, jQuery, YouTube API
 		     					      </span>
 		     					   </div>
 	                     </div>
@@ -424,13 +421,13 @@ if($_POST["submit"]) {
 
 	            <div class="bgrid folio-item">
 	               <div class="item-wrap">
-	               	<img src="images/portfolio/clouds.jpg"alt="Clouds">
+	               	<img src="images/brain-storm-1.JPG" alt="Brain Storm">
 	                  <a href="#modal-03" class="overlay">
 	                     <div class="folio-item-table">
 	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Clouds</h3>
+	                     		<h3 class="folio-title">Brain Storm</h3>
 		     					    	<span class="folio-types">
-		     					       	  Web Design
+		     					       	  HTML, CSS, Boostrap, JavaScript, jQuery, node.js, express, Open Weather Map API, MongoDB, mongoose, Mocha, Chai, Travis CI, Heroku
 		     					      </span>
 		     					   </div>
 	                     </div>
